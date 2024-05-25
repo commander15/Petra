@@ -20,17 +20,13 @@ class _HomePageState extends State<HomePage>
   _HomePageState(): screenRoutes = List.empty() {
     screenRoutes = [
       PButton(
-        text: "Predict",
+        text: "Prédiction",
         onPressed: _navigateToPredict,
-      ),
-      PButton(
-        text: "Ongoing",
-        onPressed: _navigateToOngoing,
       ),
       OButton(
         text: "Information",
         onPressed: _navigateToInformation,
-      ),
+      )
     ];
   } 
 
@@ -64,13 +60,16 @@ class _HomePageState extends State<HomePage>
               Container(
                 margin: const EdgeInsets.only(top: 40),
                 width: 200,
-                height: 240,
+                height: 120,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: screenRoutes,
                 ),
               ),
+              Text(
+                "Version 1.0"
+              )
             ],
           )
         ),

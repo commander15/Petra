@@ -33,32 +33,32 @@ class _ResultPageState extends State<ResultPage> {
           Image.asset("assets/calendar.png"),
           ResultItem(
             title: "Date", 
-            text: result.lastPeriod.toString(),
+            text: result.lastPeriod,
             description: ""
             ),
           ResultItem(
             title: "Dernière Période", 
-            text: result.lastPeriod.toString(),
+            text: result.lastPeriod,
             description: ""
             ),
           ResultItem(
             title: "Prochaine Période", 
-            text: result.nextPeriod.toString(),
+            text: result.nextPeriod,
             description: ""
             ),
           ResultItem(
             title: "Phase Folliculaire", 
-            text: result.follicularPhase.toString(),
+            text: result.follicularPhase,
             description: ""
             ),
           ResultItem(
             title: "Phase Luteaire", 
-            text: result.lastPeriod.toString(),
+            text: result.lastPeriod,
             description: ""
             ),
           ResultItem(
             title: "Phase d'Ovulation",
-            text: result.ovulationPhase.toString(),
+            text: result.ovulationPhase,
             description: ""
             ),
         ],

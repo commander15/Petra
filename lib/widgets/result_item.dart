@@ -2,13 +2,19 @@ import 'package:flutter/material.dart';
 
 class ResultItem extends StatelessWidget {
   final String ?description;
-  final String text;
+  final DateTime text;
   final String title; 
   
-  const ResultItem({super.key, required this.title, this.description, required this.text});
+  ResultItem({super.key, required this.title, this.description, required this.text});
 
   @override
   Widget build(BuildContext context) {
+    int day = text.day;
+
+    int month = text.month;
+    
+    int year = text.year;
+
     return SizedBox(
       width: double.infinity,
         child: Card(
@@ -29,7 +35,7 @@ class ResultItem extends StatelessWidget {
                   )
                 ),
                 Text(
-                  text,
+                  "$day/$month/$year",
                   style: Theme.of(context).textTheme.bodyLarge,
                 )
               ],
